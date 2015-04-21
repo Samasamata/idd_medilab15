@@ -20,8 +20,8 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		
     static const int num = 10000; //teisuu
-    ofVec2f position[num];
-    ofVec2f velocity[num];
+    ofVec3f position[num];
+    ofVec3f velocity[num];
     ofColor color[num];
     
 };

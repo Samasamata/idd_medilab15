@@ -39,11 +39,11 @@ void ofApp::update(){
            velocity[i].y *= -1;
         }
         
-            if(position[i].z < 0 || position[i].z > ofGetHeight()){
-                velocity[i].z *= -1;
-            }
+        if(position[i].z < 0 || position[i].z > ofGetHeight()){
+            velocity[i].z *= -1;
+        }
         
-           }
+    }
 }
 
 //--------------------------------------------------------------
@@ -58,9 +58,9 @@ void ofApp::draw(){
     }
 
     
-    ofDrawBitmapString("hello ba--ka!", 20,20);
+   // ofDrawBitmapString("hello ba--ka!", 20,20);
     
-    ofDrawBitmapString(ofToString(), 20,20);
+    ofDrawBitmapString(ofToString(ofGetFrameRate()), 20,20);
 }
 
 //--------------------------------------------------------------
