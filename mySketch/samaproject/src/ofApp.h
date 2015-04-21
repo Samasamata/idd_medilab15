@@ -19,7 +19,9 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
-    ofVec2f position;
-    ofVec2f velocity;
+    static const int num = 10000; //teisuu
+    ofVec2f position[num];
+    ofVec2f velocity[num];
+    ofColor color[num];
     
 };
