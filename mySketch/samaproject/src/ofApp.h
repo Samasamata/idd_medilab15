@@ -19,4 +19,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+    ofVec2f position;
+    ofVec2f velocity;
+    
 };
