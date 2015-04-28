@@ -33,10 +33,7 @@ public:
         position.y = 0;
     }
     
-    if(position.x < 0 ){
-        position.x = position.x+2;
-    }
-    }
+        
 
     void draw();
     

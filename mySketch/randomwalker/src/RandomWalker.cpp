@@ -10,7 +10,7 @@
 
 RandomWalker::RandomWalker(){
      position.x = ofGetWidth() / 2.0;
-      position.y = ofGetHeight() / 2.0;
+    position.y = ofGetHeight() / 2.0;
     
 
 }
