@@ -44,6 +44,8 @@ void ofApp::update(){
         }
         
     }
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -54,13 +56,18 @@ void ofApp::draw(){
     for (int i = 0; i < num; i ++) {
 
         ofSetColor(color[i]);
-    ofCircle(position[i].x, position[i].y, position[i].z ,2);
+    ofCircle(position[i].x, position[i].y, position[i].z ,20);
     }
 
     
    // ofDrawBitmapString("hello ba--ka!", 20,20);
     
     ofDrawBitmapString(ofToString(ofGetFrameRate()), 20,20);
+    
+  //  if(
+//     ofGetFrameRate=60(ofBackground(20, 20, 100));
+    
+    
 }
 
 //--------------------------------------------------------------

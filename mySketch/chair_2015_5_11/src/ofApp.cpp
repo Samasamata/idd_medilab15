@@ -2,31 +2,24 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetFrameRate(60);
-    ofBackground(0);
+    
+    ofBackground(20, 100, 200);
+    
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
-    
-    for (int i = 0; i < NUM; i++) {
-        
-        particle[i].addForce(ofVec2f(0, 1.0));
-        particle[i].update();
-        particle[i].bounceOffWalls();
-        
-        <#statements#>
-    }
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    for (int i = 0; i < NUM; i++) {
-    particle[i].draw();
+    
+    
+
 }
-}
+
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
 
@@ -54,24 +47,6 @@ void ofApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-    
-    
-    for (int i = 0; i < NUM; i++) {
-    
-    particle[i].position.set(x,y);
-    particle[i].velocity.set(0,0);
-    particle[i].mass = 10.0;
-        
-        float length = ofRandom(20);
-        float angle = ofRandom(2 * PI);
-        float rx = length * cos(angle);
-        float ry = length * sin(angle);
-    particle[i].acceleration.set(ofRandom(-10, 10),ofRandom(-20,0));
-        
-        
-    //particle.addForce(ofVec2f(-10,10));
-                
-    //particle.acceleration.set(ofRandom(-10, 10),ofRandom(-10,10));
 
 }
 
