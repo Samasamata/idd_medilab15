@@ -9,6 +9,7 @@ public:
     void addForce(ofVec2f force);
     void bounceOffWalls();
     
+<<<<<<< HEAD
     
     ofVec2f velocity;//速度
     ofVec2f acceleration;//加速度
@@ -17,4 +18,12 @@ public:
     float radius;// 半径
     float friction;//摩擦
     
+=======
+    ofVec2f velocity;
+    ofVec2f acceleration;
+    ofVec2f position;
+    float mass;
+    float radius;
+    float friction;
+>>>>>>> tado/master
 };
