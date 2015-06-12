@@ -2,39 +2,44 @@
 
 void ofApp::setup(){
     ofSetFrameRate(60);
-    ofBackground(0);
+    ofBackground(255);
     ofSetBackgroundAuto(false);
     mesh.setMode(OF_PRIMITIVE_POINTS);
     gui.setup();
-    gui.add(size.setup("pint size", 2.0, 0.0, 4.0));
+    gui.add(size.setup("pint size", 50, 0.0, 4.0));
     gui.add(pointAlpha.setup("pint alpha", 5, 0, 63));
     gui.add(bgAlpha.setup("background alpha", 5, 0, 31));
+    radius = 30;
 }
 
 void ofApp::update(){
 }
 
 void ofApp::draw(){
-    ofSetColor(0, bgAlpha);
+    ofSetColor(0,0,0);
     ofRect(0, 0, ofGetWidth(), ofGetHeight());
-    ofSetColor(255, pointAlpha);
+    ofSetColor(255,52,52);
     mesh.clear();
     glPointSize(size);
+    
     for (int i = 0; i < NUM; i++) {
         walker[i].draw();
         ofVec3f pos = ofVec3f(walker[i].position.x,
                               walker[i].position.y,
                               0);
         mesh.addVertex(pos);
+        size = radius;
     }
-    mesh.draw();
+    if (position.x = position.x-1){
+        radius
+        mesh.draw();
     gui.draw();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     for (int i = 0; i < NUM; i++) {
-        walker[i].position.set(ofGetWidth()/2, ofGetHeight()/2);
+        walker[i].position.set(ofGetWidth()/2, ofGetHeight()/3);
     }
 }
 

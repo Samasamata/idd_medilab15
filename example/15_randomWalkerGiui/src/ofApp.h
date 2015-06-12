@@ -21,7 +21,7 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    static const int NUM = 500000;
+    static const int NUM = 5;
     RandomWalker walker[NUM];
     
     ofxPanel gui;
@@ -29,6 +29,7 @@ public:
     ofxFloatSlider pointAlpha;
     ofxFloatSlider bgAlpha;
     ofVboMesh mesh;
+    int radius;
 };
 
 
