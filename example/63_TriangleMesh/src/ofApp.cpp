@@ -12,11 +12,18 @@ void ofApp::setup(){
     w = 200;
     h = 200;
     
-    createMesh();
+    plane = ofPlanePrimitive(400,400,20,20);
+    
+   // mesh = plane.getMesh();
+   // createMesh();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    
+    mesh
+    
     for(int y = 1; y + 1 < ySteps; y++) {
         for(int x = 1; x + 1 < xSteps; x++) {
             // x, y に該当する頂点番号を計算
@@ -42,8 +49,8 @@ void ofApp::draw(){
     
     // 頂点の位置をドットで表示
     ofTranslate(-w / 2, -h / 2);
-    mesh.drawWireframe();
-    
+   // mesh.drawWireframe();
+    plane.drawWireframe();
     cam.end(); // カメラ終了
     
     // ログの表示

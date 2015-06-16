@@ -60,6 +60,7 @@ void ofApp::draw(){
     ofRotateZ(180);
     ofTranslate(-h / 2, -w / 2);
     mesh.draw();
+    
     //カメラ映像をアンバインド
     myVideo.getTextureReference().unbind();
     
